@@ -1,77 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Dakota Pope</title>
-    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon"/>
-    <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="CSS/style.production.css">
-  </head>
 
-  <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Dakota Pope</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
     <header class="page-header">
-      <img src="img/Name_logo.png" alt="logo" class="page-header_item">
-      <nav class="main_navigation page-header_item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="About.html" role="menuitem" class="navigation-list__item">About Me</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-          </li>
-          <li role="presentation">
-            <a href="Contact.html" role="menuitem" class="navigation-list__item">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
-    </header> 
-    
-  <div class="contact_head">Send a inquiry or Reach out from the following:</div>
-    <main class="contact_contents">
-      <form action="#" method="post" id="contact_form" aria-label="Send me  a message">
+        <!-- Add Logo here -->
+        <img src="img/Name_logo.png" alt="Dakota Pope logo" class="page-header__item">
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <label class="standard-label" for="contact_email">E-mail:</label>
-        <input type="email" id="contact_email" required>
-        <br>
-        <label class="standard-label" for="contact_tel">Telephone:</label>
-        <input type="tel" id="contact_tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-        <br>
-        <small>Format: 123-456-7890</small>
-        <br>
-
-        <label class="standard-label" for="message_text">Message: </label>
-        <textarea id="message_text" required maxlength="240"></textarea>
-  
-        <input type="submit" value="Send message">
-        <br>
-        Tel <a href="tel:+17068768568" aria-label="My phone number">+1(706)-876-8568</a><br>
-        Email <a href="mailto:Dakota_pope1996@hotmail.com">Dakota_pope1996@hotmail.com</a><br>
-        Skype <a href="dakotapope.15">dakotapope.15</a><br>
-        <a href="mailto:Dakota_pope1996@hotmail.com">Contact Me</a>
-
-      </form>
-    </main>
-  </div>
-  
-      <footer class="page-footer">
-        <p>
-        Find me on:
-        </p>
-        <div class="social-media">
-          <a href="https://github.com" target="_blank">
-            <img src="img/Github_logo.svg" alt="GitHub">
-          </a>
-          <a href="https://linkedin.com" target="_blank">
-            <img src="img/Link_logo.svg" alt="LinkedIn">
-          </a>
+    <main class="contact-main">
+        <h1>Contact</h1>
+        <div>
+            Dakota Pope<br>
+            61 Fleet Dr <br>
+            Dahlonega, GA 30533<br>
+            <br>
+            Tel <a href="tel:+17068768568" aria-label="My phone number">+1(706)-876-8568</a><br>
+            Email <a href="mailto:Dakota_pope1996@hotmail.com">Dakota_pope1996@hotmail.com</a><br>
+            Skype <a href="dakotapope.15">dakotapope.15</a><br>
+            <a href="mailto:Dakota_pope1996@hotmail.com">Contact Me</a>
         </div>
-      </footer>
-    <script src="js/tota11y.min.js"></script>      
-  </body>
+        <br>
+        <form action="#" method="post" class="contact-form">
+            <label class="standard-label" for="contact-email">E-mail: </label>
+            <input type="email" placeholder="E-mail" id="contact-email" required>
+            <br>
+            <label class="standard-label" for="telephone">Telephone: </label>
+            <input type="tel" id="telephone" placeholder="Example +1(123)-456-7890" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+            <br>
+            <label class="standard-label" for="message">Message: </label>
+            <textarea maxlength="240" id="message" placeholder="Type your message here, Max 240" required></textarea>
+
+            <input type="submit" value="Send message">
+        </form>
+    </main>
+
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <a href="https://github.com/Freecody15" target="_blank"><img src="img/Github_logo.svg" alt="Github"></a>
+            <a href="https://www.facebook.com/dakota.pope.90/" target="_blank"><img src="img/facebook-icon.svg" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/in/dakota-pope-a52996213/" target="_blank"><img src="img/Link_logo.svg" alt="LinkedIn"></a>
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+</body>
+
 </html>
